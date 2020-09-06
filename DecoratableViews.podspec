@@ -84,7 +84,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/sonmezvolkan/UIStoryView.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/sonmezvolkan/DecoratableViews.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -95,7 +95,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "DecoratableViews", "DecoratableViews/**/*.{h,m,swift,png,xib}"
+  spec.source_files  = "DecoratableViews", "DecoratableViews/**/*.{h,m,swift,png,xib,xcassets}"
   spec.exclude_files = "Classes/Exclude"
 
 
