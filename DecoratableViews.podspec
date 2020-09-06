@@ -95,12 +95,12 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "DecoratableViews", "DecoratableViews/**/*.{h,m,swift,png,xib,xcassets,xcdatamodeld}"
+  spec.source_files  = "DecoratableViews", "DecoratableViews/**/*.{h,m,swift,png,xib}"
   spec.exclude_files = "Classes/Exclude"
 
 
   spec.resource_bundles = {
-    "DecoratableViews" => ["DecoratableViews/**/*.{storyboard,xib,png,xcassets,xcdatamodeld}"]
+    "DecoratableViews" => ["DecoratableViews/**/*.{storyboard,xib,png}"]
   }
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -115,7 +115,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  spec.resources = "DecoratableViews/**/*.{lproj,storyboard,xcdatamodeld,xib,xcassets,json}"
+  spec.resources = "DecoratableViews/**/*.{lproj,storyboard,xib,png}"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
