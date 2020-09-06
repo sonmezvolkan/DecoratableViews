@@ -72,7 +72,7 @@ public class NotificationView: UIView, DecoratableViewProtocol {
         if let image = dataSource.image {
             imgView.image = image
         } else {
-            imgView.image = UIImage(named: "bell", in: Bundle.getPodBundle(forClassType: NotificationView.self), compatibleWith: nil)
+            imgView.image = UIImage(named: "bell", in: Bundle.getPodBundle(forClassType: NotificationView.self), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate)
             imgView.tintColor = .white
         }
     }

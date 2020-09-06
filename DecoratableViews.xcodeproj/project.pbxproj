@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		331707F6250534DA00EF8818 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331707F5250534DA00EF8818 /* MenuCell.swift */; };
+		331707F8250534E400EF8818 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 331707F7250534E400EF8818 /* MenuCell.xib */; };
+		331707FA2505374E00EF8818 /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 331707F92505374E00EF8818 /* MenuView.xib */; };
+		331707FC2505375900EF8818 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331707FB2505375900EF8818 /* MenuView.swift */; };
+		331707FE250537A900EF8818 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331707FD250537A900EF8818 /* MenuModel.swift */; };
 		333C9A2F2504D497003344CC /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 333C9A2E2504D497003344CC /* back.png */; };
 		333C9A312504D522003344CC /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 333C9A302504D522003344CC /* bell.png */; };
 		333C9A332504D53E003344CC /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 333C9A322504D53D003344CC /* close.png */; };
@@ -47,6 +52,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		331707F5250534DA00EF8818 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		331707F7250534E400EF8818 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		331707F92505374E00EF8818 /* MenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
+		331707FB2505375900EF8818 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		331707FD250537A900EF8818 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		333C9A2E2504D497003344CC /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		333C9A302504D522003344CC /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
 		333C9A322504D53D003344CC /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
@@ -99,6 +109,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		331707F3250534AA00EF8818 /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				331707FF250537AD00EF8818 /* Model */,
+				331707F4250534B400EF8818 /* TableCell */,
+				331707F92505374E00EF8818 /* MenuView.xib */,
+				331707FB2505375900EF8818 /* MenuView.swift */,
+			);
+			path = MenuView;
+			sourceTree = "<group>";
+		};
+		331707F4250534B400EF8818 /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				331707F5250534DA00EF8818 /* MenuCell.swift */,
+				331707F7250534E400EF8818 /* MenuCell.xib */,
+			);
+			path = TableCell;
+			sourceTree = "<group>";
+		};
+		331707FF250537AD00EF8818 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				331707FD250537A900EF8818 /* MenuModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		333EC2A62502419E00660CD2 = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +262,7 @@
 		333EC2D72502455300660CD2 /* Concrete */ = {
 			isa = PBXGroup;
 			children = (
+				331707F3250534AA00EF8818 /* MenuView */,
 				333EC2F925024E4F00660CD2 /* AlertView */,
 				333EC2F425024B3D00660CD2 /* ErrorView */,
 				333EC2ED25024A1900660CD2 /* NotificationView */,
@@ -415,10 +454,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				333EC30525024FA300660CD2 /* AlertView.xib in Resources */,
+				331707FA2505374E00EF8818 /* MenuView.xib in Resources */,
 				333C9A3B2504D595003344CC /* warning.png in Resources */,
 				333C9A372504D575003344CC /* right.png in Resources */,
 				333C9A312504D522003344CC /* bell.png in Resources */,
 				333EC2F125024A3C00660CD2 /* NotificationView.xib in Resources */,
+				331707F8250534E400EF8818 /* MenuCell.xib in Resources */,
 				333C9A332504D53E003344CC /* close.png in Resources */,
 				333C9A2F2504D497003344CC /* back.png in Resources */,
 				333EC2F825024B5500660CD2 /* ErrorView.xib in Resources */,
@@ -436,6 +477,7 @@
 			files = (
 				333EC2D52502443C00660CD2 /* UIViewController+Extension.swift in Sources */,
 				333EC2E3250246D700660CD2 /* ScalingDecorator.swift in Sources */,
+				331707F6250534DA00EF8818 /* MenuCell.swift in Sources */,
 				333EC2EF25024A2500660CD2 /* NotificationViewDataSource.swift in Sources */,
 				333EC30B2502527200660CD2 /* Bundle+Extension.swift in Sources */,
 				333EC2C42502432000660CD2 /* DecoratableViewDataSource.swift in Sources */,
@@ -445,6 +487,7 @@
 				333EC30925024FDA00660CD2 /* AlertView+Animation.swift in Sources */,
 				333EC2CF250243E100660CD2 /* UIDevice+Extension.swift in Sources */,
 				333EC2C2250242F200660CD2 /* AnimationModel.swift in Sources */,
+				331707FE250537A900EF8818 /* MenuModel.swift in Sources */,
 				333EC2FE25024F4900660CD2 /* AlertButton.swift in Sources */,
 				333EC2E62502470B00660CD2 /* TopSlideDecorator.swift in Sources */,
 				333EC2DD2502466600660CD2 /* CustomAnimateDecorator.swift in Sources */,
@@ -454,6 +497,7 @@
 				333EC30125024F6F00660CD2 /* AlertButtonDataSource.swift in Sources */,
 				333EC2CB2502439E00660CD2 /* DecoratorProtocol.swift in Sources */,
 				333EC2D1250243FB00660CD2 /* UIApplication+Extension.swift in Sources */,
+				331707FC2505375900EF8818 /* MenuView.swift in Sources */,
 				333EC2D32502441C00660CD2 /* UIColor+Extension.swift in Sources */,
 				333EC2F625024B4B00660CD2 /* ErrorView.swift in Sources */,
 				333EC2EA2502477300660CD2 /* BottomSlideDecorator.swift in Sources */,

@@ -11,7 +11,7 @@ import UIKit
 
 internal class DefaultAlertViewDataSource {
     
-    private let bundle = Bundle.main
+    private let bundle = Bundle.getPodBundle(forClassType: DefaultAlertViewDataSource.self)
     
     public var title: String?
     public var titleFont: UIFont?
@@ -36,7 +36,7 @@ internal class DefaultAlertViewDataSource {
     internal func setImage(alertViewType: AlertView.AlertViewType) {
          switch alertViewType {
          case .success:
-             image = UIImage(named: "success", in: bundle, compatibleWith: nil)
+            image = UIImage(named: "success", in: bundle, compatibleWith: nil)
          case .failure:
              image = UIImage(named: "failure", in: bundle, compatibleWith: nil)
          case .warning:
