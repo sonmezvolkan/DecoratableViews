@@ -8,9 +8,9 @@
 [![](DecoratableViews/Resources/menu.gif)](menu.gif) -->
 
 <p float="left">
-  <img src="/DecoratableViews/Resources/error.gif" width="100" />
-  <img src="/DecoratableViews/Resources/notificationgif" width="100" /> 
-  <img src="/DecoratableViews/Resources/alert-view.gif" width="100" />
+  <img src="/DecoratableViews/Resources/error.gif" width="150" />
+  <img src="/DecoratableViews/Resources/notificationgif" width="150" /> 
+  <img src="/DecoratableViews/Resources/alert-view.gif" width="150" />
 </p>
 
 <!-- ![1](DecoratableViews/Resources/error.gif)
