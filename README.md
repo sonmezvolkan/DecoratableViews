@@ -10,3 +10,5 @@
   <img src="/DecoratableViews/Resources/bottom-error.gif" width="250" />
   <img src="/DecoratableViews/Resources/menu.gif" width="250" />
 </p>
+
+##Sample Usage Coming Soon
