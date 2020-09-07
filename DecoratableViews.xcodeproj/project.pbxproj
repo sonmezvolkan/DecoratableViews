@@ -53,7 +53,7 @@
 		3347477425061CC4005ABA22 /* notification.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3347477325061CC4005ABA22 /* notification.gif */; };
 		3347477825061CCD005ABA22 /* bottom-error.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3347477725061CCD005ABA22 /* bottom-error.gif */; };
 		3347477A25061CD2005ABA22 /* alert-view.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3347477925061CD2005ABA22 /* alert-view.gif */; };
-		3347477C25063A5A005ABA22 /* error.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3347477B25063A5A005ABA22 /* error.gif */; };
+		3347477E25063E64005ABA22 /* error.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3347477D25063E64005ABA22 /* error.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,7 +105,7 @@
 		3347477325061CC4005ABA22 /* notification.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = notification.gif; sourceTree = "<group>"; };
 		3347477725061CCD005ABA22 /* bottom-error.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bottom-error.gif"; sourceTree = "<group>"; };
 		3347477925061CD2005ABA22 /* alert-view.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "alert-view.gif"; sourceTree = "<group>"; };
-		3347477B25063A5A005ABA22 /* error.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = error.gif; sourceTree = "<group>"; };
+		3347477D25063E64005ABA22 /* error.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = error.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -382,7 +382,7 @@
 		333EC30C250258FA00660CD2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3347477B25063A5A005ABA22 /* error.gif */,
+				3347477D25063E64005ABA22 /* error.gif */,
 				3347477925061CD2005ABA22 /* alert-view.gif */,
 				3347477725061CCD005ABA22 /* bottom-error.gif */,
 				3347477325061CC4005ABA22 /* notification.gif */,
@@ -480,7 +480,7 @@
 				331707F8250534E400EF8818 /* MenuCell.xib in Resources */,
 				333C9A332504D53E003344CC /* close.png in Resources */,
 				333C9A2F2504D497003344CC /* back.png in Resources */,
-				3347477C25063A5A005ABA22 /* error.gif in Resources */,
+				3347477E25063E64005ABA22 /* error.gif in Resources */,
 				3347477225061CBE005ABA22 /* menu.gif in Resources */,
 				333EC2F825024B5500660CD2 /* ErrorView.xib in Resources */,
 				333C9A392504D585003344CC /* success.png in Resources */,
