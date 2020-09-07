@@ -37,10 +37,10 @@ public class DecoratableViewDataSource {
         private var renewDurationWhenTouchesBegan: Bool = false
         private var superViewBackgroundColor: UIColor = .clear
         
-        public init(alertView: DecoratableViewProtocol,
+        public init(view: DecoratableViewProtocol,
                     alertDecorator: DecoratorProtocol) {
             self.alertDecorator = alertDecorator
-            self.alertDecorator.alertView = alertView
+            self.alertDecorator.alertView = view
             
             self.alertDecorator.createAnimationModelInstance()
         }
@@ -78,6 +78,7 @@ public class DecoratableViewDataSource {
         @discardableResult
         public func setCloseTappedAround(isEnabled: Bool) -> Builder {
             self.alertDecorator.closeTappedAround = isEnabled
+            self.alertDecorator.blockUserInteractions = true
             return self
         }
         

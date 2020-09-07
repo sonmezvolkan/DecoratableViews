@@ -49,6 +49,11 @@
 		333EC30725024FAB00660CD2 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333EC30625024FAB00660CD2 /* AlertView.swift */; };
 		333EC30925024FDA00660CD2 /* AlertView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333EC30825024FDA00660CD2 /* AlertView+Animation.swift */; };
 		333EC30B2502527200660CD2 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333EC30A2502527200660CD2 /* Bundle+Extension.swift */; };
+		3347477225061CBE005ABA22 /* menu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3347477125061CBE005ABA22 /* menu.gif */; };
+		3347477425061CC4005ABA22 /* notification.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3347477325061CC4005ABA22 /* notification.gif */; };
+		3347477625061CC8005ABA22 /* error.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3347477525061CC8005ABA22 /* error.gif */; };
+		3347477825061CCD005ABA22 /* bottom-error.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3347477725061CCD005ABA22 /* bottom-error.gif */; };
+		3347477A25061CD2005ABA22 /* alert-view.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3347477925061CD2005ABA22 /* alert-view.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +101,11 @@
 		333EC30625024FAB00660CD2 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		333EC30825024FDA00660CD2 /* AlertView+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertView+Animation.swift"; sourceTree = "<group>"; };
 		333EC30A2502527200660CD2 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		3347477125061CBE005ABA22 /* menu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = menu.gif; sourceTree = "<group>"; };
+		3347477325061CC4005ABA22 /* notification.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = notification.gif; sourceTree = "<group>"; };
+		3347477525061CC8005ABA22 /* error.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = error.gif; sourceTree = "<group>"; };
+		3347477725061CCD005ABA22 /* bottom-error.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "bottom-error.gif"; sourceTree = "<group>"; };
+		3347477925061CD2005ABA22 /* alert-view.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "alert-view.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -372,6 +382,11 @@
 		333EC30C250258FA00660CD2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3347477925061CD2005ABA22 /* alert-view.gif */,
+				3347477725061CCD005ABA22 /* bottom-error.gif */,
+				3347477525061CC8005ABA22 /* error.gif */,
+				3347477325061CC4005ABA22 /* notification.gif */,
+				3347477125061CBE005ABA22 /* menu.gif */,
 				333C9A3A2504D595003344CC /* warning.png */,
 				333C9A382504D585003344CC /* success.png */,
 				333C9A362504D575003344CC /* right.png */,
@@ -453,15 +468,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3347477825061CCD005ABA22 /* bottom-error.gif in Resources */,
 				333EC30525024FA300660CD2 /* AlertView.xib in Resources */,
+				3347477A25061CD2005ABA22 /* alert-view.gif in Resources */,
 				331707FA2505374E00EF8818 /* MenuView.xib in Resources */,
 				333C9A3B2504D595003344CC /* warning.png in Resources */,
+				3347477425061CC4005ABA22 /* notification.gif in Resources */,
 				333C9A372504D575003344CC /* right.png in Resources */,
+				3347477625061CC8005ABA22 /* error.gif in Resources */,
 				333C9A312504D522003344CC /* bell.png in Resources */,
 				333EC2F125024A3C00660CD2 /* NotificationView.xib in Resources */,
 				331707F8250534E400EF8818 /* MenuCell.xib in Resources */,
 				333C9A332504D53E003344CC /* close.png in Resources */,
 				333C9A2F2504D497003344CC /* back.png in Resources */,
+				3347477225061CBE005ABA22 /* menu.gif in Resources */,
 				333EC2F825024B5500660CD2 /* ErrorView.xib in Resources */,
 				333C9A392504D585003344CC /* success.png in Resources */,
 				333C9A352504D554003344CC /* failure.png in Resources */,
