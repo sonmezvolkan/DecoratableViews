@@ -30,6 +30,7 @@ internal class AlertButton: UIButton {
     
     private func setContents() {
         setTitle(source.title, for: .normal)
+        setTitleColor(source.buttonTextColor, for: .normal)
         backgroundColor = source.buttonBackgroundColor
         layer.cornerRadius = source.buttonRadius
         clipsToBounds = true
