@@ -100,7 +100,7 @@ Pod::Spec.new do |spec|
 
 
   spec.resource_bundles = {
-    "DecoratableViews" => ["DecoratableViews/**/*.{storyboard,xib,png}"]
+    "DecoratableViews" => ["Sources/**/*.{storyboard,xib,png}"]
   }
 
   # spec.public_header_files = "Classes/**/*.h"
