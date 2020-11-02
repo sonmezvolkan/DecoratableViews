@@ -33,7 +33,7 @@ internal class DefaultAlertViewDataSource {
         self.message = message
     }
     
-    internal func setImage(alertViewType: AlertView.AlertViewType) {
+    internal func setImage(alertViewType: DefaultAlertView.AlertViewType) {
          switch alertViewType {
          case .success:
             image = UIImage(named: "success", in: bundle, compatibleWith: nil)

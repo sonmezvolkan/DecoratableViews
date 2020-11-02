@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension AlertView.Builder {
+extension DefaultAlertView.Builder {
     
     internal func openingAnimation() {
         setOpeningTransform()
