@@ -150,22 +150,6 @@ extension AlertView {
         case warning
     }
     
-    public enum OpeningAnimateType: Int {
-        case fromTop
-        case fromBottom
-        case fromLeft
-        case fromRight
-        case fadeIn
-    }
-    
-    public enum ClosingAnimateType: Int {
-        case toTop
-        case toBottom
-        case toLeft
-        case toRight
-        case fadeOut
-    }
-    
     public class Builder {
                 
         internal let alertDecorator = CustomAnimateDecorator(type: .center)

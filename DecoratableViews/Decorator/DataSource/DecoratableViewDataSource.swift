@@ -16,17 +16,23 @@ public class DecoratableViewDataSource {
     public var duration: Int!
     public var renewDurationWhenTouchesBegan: Bool!
     public var superViewBackgroundColor: UIColor!
+    public var onAnimationStart: (() -> Void)?
+    public var onAnimationEnd: (() -> Void)?
     
     fileprivate init(decorator: DecoratorProtocol,
                      autoClose: Bool,
                      duration: Int,
                      renewDurationWhenTouchesBegan: Bool,
-                     superViewBackgroundColor: UIColor) {
+                     superViewBackgroundColor: UIColor,
+                     onAnimationStart: (() -> Void)?,
+                     onAnimationEnd: (() -> Void)?) {
         self.decorator = decorator
         self.autoClose = autoClose
         self.duration = duration
         self.renewDurationWhenTouchesBegan = renewDurationWhenTouchesBegan
         self.superViewBackgroundColor = superViewBackgroundColor
+        self.onAnimationStart = onAnimationStart
+        self.onAnimationEnd = onAnimationEnd
     }
 
     public class Builder {
@@ -36,6 +42,8 @@ public class DecoratableViewDataSource {
         private var duration: Int = 15
         private var renewDurationWhenTouchesBegan: Bool = false
         private var superViewBackgroundColor: UIColor = .clear
+        public var onAnimationStart: (() -> Void)?
+        public var onAnimationEnd: (() -> Void)?
         
         public init(view: DecoratableViewProtocol,
                     alertDecorator: DecoratorProtocol) {
@@ -148,13 +156,27 @@ public class DecoratableViewDataSource {
             self.alertDecorator.radius = radius
             return self
         }
+        
+        @discardableResult
+        public func setOnAnimationStart(onAnimationStart: (() -> Void)?) -> Builder {
+            self.onAnimationStart = onAnimationStart
+            return self
+        }
+        
+        @discardableResult
+        public func setOnAnimationEnd(onAnimationEnd: (() -> Void)?) -> Builder {
+            self.onAnimationEnd = onAnimationEnd
+            return self
+        }
 
         public func getDataSource() -> DecoratableViewDataSource {
             return DecoratableViewDataSource(decorator: alertDecorator,
                                                   autoClose: autoClose,
                                                   duration: duration,
                                                   renewDurationWhenTouchesBegan: renewDurationWhenTouchesBegan,
-                                                  superViewBackgroundColor: superViewBackgroundColor)
+                                                  superViewBackgroundColor: superViewBackgroundColor,
+                                                  onAnimationStart: onAnimationStart,
+                                                  onAnimationEnd: onAnimationEnd)
         }
         
         public func show() {
