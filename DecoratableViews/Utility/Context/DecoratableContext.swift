@@ -36,9 +36,11 @@ internal class DecoratableContext {
     }
     
     public func reset() {
+        resetTimer()
+        let onAnimationEnd = dataSource?.onAnimationEnd
         dataSource = nil
         controller = nil
-        resetTimer()
+        onAnimationEnd?()
     }
     
     public func resetTimer() {
