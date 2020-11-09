@@ -43,7 +43,7 @@ public class DefaultAlertView: UIView, DecoratableViewProtocol {
     
     private func setUp() {
         let bundle = Bundle.getPodBundle(forClassType: NotificationView.self)
-        bundle.loadNibNamed("AlertView", owner: self, options: nil)
+        bundle.loadNibNamed("DefaultAlertView", owner: self, options: nil)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         contentView.backgroundColor = .red
