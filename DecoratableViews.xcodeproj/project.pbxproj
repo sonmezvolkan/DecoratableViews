@@ -45,9 +45,9 @@
 		333EC2FB25024E8C00660CD2 /* DefaultAlertViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333EC2FA25024E8C00660CD2 /* DefaultAlertViewDataSource.swift */; };
 		333EC2FE25024F4900660CD2 /* AlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333EC2FD25024F4900660CD2 /* AlertButton.swift */; };
 		333EC30125024F6F00660CD2 /* AlertButtonDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333EC30025024F6F00660CD2 /* AlertButtonDataSource.swift */; };
-		333EC30525024FA300660CD2 /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 333EC30425024FA300660CD2 /* AlertView.xib */; };
-		333EC30725024FAB00660CD2 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333EC30625024FAB00660CD2 /* AlertView.swift */; };
-		333EC30925024FDA00660CD2 /* AlertView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333EC30825024FDA00660CD2 /* AlertView+Animation.swift */; };
+		333EC30525024FA300660CD2 /* DefaultAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 333EC30425024FA300660CD2 /* DefaultAlertView.xib */; };
+		333EC30725024FAB00660CD2 /* DefaultAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333EC30625024FAB00660CD2 /* DefaultAlertView.swift */; };
+		333EC30925024FDA00660CD2 /* DefaultAlertView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333EC30825024FDA00660CD2 /* DefaultAlertView+Animation.swift */; };
 		333EC30B2502527200660CD2 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333EC30A2502527200660CD2 /* Bundle+Extension.swift */; };
 		3347477225061CBE005ABA22 /* menu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3347477125061CBE005ABA22 /* menu.gif */; };
 		3347477425061CC4005ABA22 /* notification.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3347477325061CC4005ABA22 /* notification.gif */; };
@@ -97,9 +97,9 @@
 		333EC2FA25024E8C00660CD2 /* DefaultAlertViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertViewDataSource.swift; sourceTree = "<group>"; };
 		333EC2FD25024F4900660CD2 /* AlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButton.swift; sourceTree = "<group>"; };
 		333EC30025024F6F00660CD2 /* AlertButtonDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButtonDataSource.swift; sourceTree = "<group>"; };
-		333EC30425024FA300660CD2 /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
-		333EC30625024FAB00660CD2 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
-		333EC30825024FDA00660CD2 /* AlertView+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertView+Animation.swift"; sourceTree = "<group>"; };
+		333EC30425024FA300660CD2 /* DefaultAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultAlertView.xib; sourceTree = "<group>"; };
+		333EC30625024FAB00660CD2 /* DefaultAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertView.swift; sourceTree = "<group>"; };
+		333EC30825024FDA00660CD2 /* DefaultAlertView+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultAlertView+Animation.swift"; sourceTree = "<group>"; };
 		333EC30A2502527200660CD2 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		3347477125061CBE005ABA22 /* menu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = menu.gif; sourceTree = "<group>"; };
 		3347477325061CC4005ABA22 /* notification.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = notification.gif; sourceTree = "<group>"; };
@@ -347,9 +347,9 @@
 			children = (
 				333EC30325024F9300660CD2 /* DataSource */,
 				333EC2FF25024F5200660CD2 /* Button */,
-				333EC30425024FA300660CD2 /* AlertView.xib */,
-				333EC30625024FAB00660CD2 /* AlertView.swift */,
-				333EC30825024FDA00660CD2 /* AlertView+Animation.swift */,
+				333EC30425024FA300660CD2 /* DefaultAlertView.xib */,
+				333EC30625024FAB00660CD2 /* DefaultAlertView.swift */,
+				333EC30825024FDA00660CD2 /* DefaultAlertView+Animation.swift */,
 			);
 			path = AlertView;
 			sourceTree = "<group>";
@@ -469,7 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3347477825061CCD005ABA22 /* bottom-error.gif in Resources */,
-				333EC30525024FA300660CD2 /* AlertView.xib in Resources */,
+				333EC30525024FA300660CD2 /* DefaultAlertView.xib in Resources */,
 				3347477A25061CD2005ABA22 /* alert-view.gif in Resources */,
 				331707FA2505374E00EF8818 /* MenuView.xib in Resources */,
 				333C9A3B2504D595003344CC /* warning.png in Resources */,
@@ -502,9 +502,9 @@
 				333EC30B2502527200660CD2 /* Bundle+Extension.swift in Sources */,
 				333EC2C42502432000660CD2 /* DecoratableViewDataSource.swift in Sources */,
 				333EC2FB25024E8C00660CD2 /* DefaultAlertViewDataSource.swift in Sources */,
-				333EC30725024FAB00660CD2 /* AlertView.swift in Sources */,
+				333EC30725024FAB00660CD2 /* DefaultAlertView.swift in Sources */,
 				333EC2E82502474300660CD2 /* RightSlideDecorator.swift in Sources */,
-				333EC30925024FDA00660CD2 /* AlertView+Animation.swift in Sources */,
+				333EC30925024FDA00660CD2 /* DefaultAlertView+Animation.swift in Sources */,
 				333EC2CF250243E100660CD2 /* UIDevice+Extension.swift in Sources */,
 				333EC2C2250242F200660CD2 /* AnimationModel.swift in Sources */,
 				331707FE250537A900EF8818 /* MenuModel.swift in Sources */,
@@ -656,7 +656,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = MTB5BD867U;
+				DEVELOPMENT_TEAM = WJ3596W3JB;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -684,7 +684,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = MTB5BD867U;
+				DEVELOPMENT_TEAM = WJ3596W3JB;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
