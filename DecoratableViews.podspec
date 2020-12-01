@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "DecoratableViews"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "An instagram storyview like framework with an easy-to-use interface."
 
   # This description is used to generate tags and improve search results.
@@ -95,7 +95,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "DecoratableViews", "DecoratableViews/**/*.{h,m,swift,png,xib}"
+  spec.source_files  = "DecoratableViews", "DecoratableViews/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
 
 
