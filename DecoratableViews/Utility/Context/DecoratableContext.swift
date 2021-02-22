@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-internal class DecoratableContext {
+public class DecoratableContext {
 
-    internal static let main = DecoratableContext()
+    public static let main = DecoratableContext()
     
     private var dataSource: DecoratableViewDataSource?
     private var controller: UIViewController?
@@ -29,6 +29,12 @@ internal class DecoratableContext {
         }
         
         return controller!.view
+    }
+    
+    public func getDecoratableView() -> DecoratableViewProtocol? {
+        guard let dataSource = self.dataSource else { return nil }
+        
+        return dataSource.decorator.alertView
     }
     
     private init() {
@@ -86,3 +92,4 @@ internal class DecoratableContext {
         timerIndex += 1
     }
 }
+
