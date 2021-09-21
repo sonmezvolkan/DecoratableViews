@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "DecoratableViews"
-  spec.version      = "1.0.3"
-  spec.summary      = "An instagram storyview like framework with an easy-to-use interface."
+  spec.version      = "1.0.4"
+  spec.summary      = "A view can be decorate, you can use this library for any view and any decorator like bottom, top, center decorator. You can also create your own decorator."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
